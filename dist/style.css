@@ -120,7 +120,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	height: auto;
 	min-width: 100%;
 	min-height: 100%;
-	z-index: 9999;
+	z-index: 0;
 }
 
 
@@ -357,6 +357,14 @@ nav .caret{
 	border-bottom-color:transparent;
 	margin: 6px -5px 0 0!important;
 	float: right;
+}
+
+/* Nav Special Close Button */
+.close-special-menu .close-icon{
+	background:#fff;
+}
+.blocsapp-special-menu blocsnav{
+	background: #000;
 }
 
 /* = Bric adjustment margins
@@ -674,6 +682,9 @@ h3{
 .products-row{
 	padding-bottom:40px;
 }
+.nav-links a{
+	color:#666666!important;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -700,15 +711,6 @@ h3{
 }
 .tc-white{
 	color:#ffffff!important;
-}
-
-/* Link colour styles */
-
-.ltc-outer-space{
-	color:#47454A!important;
-}
-.ltc-outer-space:hover{
-	color:#39373b!important;
 }
 
 /* Icon colour styles */
@@ -937,6 +939,153 @@ h3{
 .nav-invert .navbar-toggle{
 	float:left;
 }
+
+/* Nav Special Classes */
+.nav-special{
+	overflow-y:scroll;
+}
+.nav-special .site-navigation{
+	top:0;
+	left:0;
+	width:100%;
+	position: relative!important;
+	max-width: 100%!important;
+	z-index: 1000;
+}
+.nav-special .nav > li{
+	width:100%;
+	background: none!important;
+	border:0!important;
+}
+.nav-special.collapsing{
+	-webkit-transition: none;
+	transition: none;
+	height:100%!important;
+	background: none!important;
+}
+.nav-special .navbar-nav .open .dropdown-menu{
+	position: static;
+	float: none;
+	width: auto;
+	margin-top: 0;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+}
+.blocsapp-special-menu{
+	position: absolute;
+	z-index:10000;
+}
+.nav-special.fullscreen-nav .caret,.nav-special.fullscreen-nav .dropdown-menu .dropdown .caret{
+	border-width: 8px;
+}
+
+/* Animate Menu Symbol */
+.navbar-toggle{
+	transition: all .1s linear;
+}
+.selected-nav{
+	opacity: 0;
+	transform: scale(0.3);
+	transition: all .1s linear;
+}
+
+
+/* Special Menu Close Button */
+.close-special-menu{
+	position: fixed;
+	display: block;
+	width: 25px;
+	height:25px;
+	top:16px;
+	right:10px;
+	z-index: 10000;
+}
+.nav-invert .sidebar-nav .close-special-menu{
+	left:260px;
+}
+.close-special-menu .close-icon{
+	display: block;
+	width:100%;
+	height:1px;
+	transform: rotate(45deg);
+	margin-top:12px;
+}
+.close-special-menu .close-icon:after{
+	content:"";
+	display:inherit;
+	width:inherit;
+	height:inherit;
+	background: inherit;
+	transform: rotate(90deg);
+}
+.lock-scroll{
+	overflow:hidden;
+	transition: background .3s linear;
+}
+.nav-special::-webkit-scrollbar{
+	-webkit-appearance: none;
+	width:0;
+	height:0;
+}
+.nav-special .dropdown-menu .dropdown .caret{
+	border-top-color: rgba(255,255,255,.8);
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	margin: 0 0 0 5px;
+	float: none;
+}
+
+/* Side Bar Navigation */
+.sidebar-nav{
+	position: fixed;
+	right: -300px;
+	top: 0;
+	bottom: 0;
+	width: 300px;
+	z-index: 1000;
+	transition: all .2s linear;
+}
+.nav-invert .sidebar-nav{
+	right: auto;
+	left: -300px;
+}
+ .sidebar-nav .nav > li a{
+	color:rgba(255,255,255,.8);
+}
+ .sidebar-nav .nav > li a:hover{
+	color:#FFF;
+}
+ .open.sidebar-nav{
+	right: 0;
+	transition: all .2s linear;
+}
+.nav-invert .open.sidebar-nav{
+	left: 0;
+	transition: all .2s linear;
+}
+
+/* Content Tint */
+.content-tint{
+	z-index: -1;
+	transition: background .2s linear;
+}
+.content-tint.on{
+	display: block;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: transparent;
+	z-index: 1001;
+	background:rgba(0,0,0,.4);
+}
+.content-tint.on:hover{
+	background:rgba(0,0,0,.1);
+}
 }
 /* Drop Down Navigation */
 @media (min-width: 767px) and (max-width: 991px){
@@ -1010,7 +1159,19 @@ h3{
 	margin-left:20px;
 	margin-right:20px;
 }
- 
+.nav-links{
+	color:#FFFFFF!important;
+}
+ .sidebar-nav{
+	width:230px;
+}
+.nav-special.sidebar-nav .nav > li{
+	width:80%;
+}
+.nav-invert .sidebar-nav .close-special-menu{
+	left:200px;
+}
+
 /* Mobile Row Margin Offsets */
 .voffset-md-xs{
 	margin-top:50px;
