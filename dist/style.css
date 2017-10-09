@@ -370,6 +370,18 @@ nav .caret{
 	margin-top:10px;
 	margin-bottom:40px;
 }
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -991,7 +1003,19 @@ h3{
 .blocs-team-first-social{
 	margin-left:41%;
 }
+.contact-form{
+	padding:20px 20px 20px 20px;
+}
+.hero-mantra{
+	margin-left:20px;
+	margin-right:20px;
+}
  
+/* Mobile Row Margin Offsets */
+.voffset-md-xs{
+	margin-top:50px;
+}
+
 /* Mobile Text Margin Offsets */
 .mg-lg-xs{
 	margin-top: 10px;
@@ -999,8 +1023,8 @@ h3{
 }
 /* = Text Mobile Alignment Classes
 -------------------------------------------------------------- */
-.text-left-xs{
-	text-align:left;
+.text-center-xs{
+	text-align:center;
 }
 }
 
