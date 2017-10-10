@@ -64,12 +64,13 @@
 	background: #000;
 	position: relative;
 	text-indent: -9999px;
-	width: 210px;
+	width: 260px;
+	height: 65px;
 }
 
 .nav-brand-title svg {
 	position: absolute;
 	top: 0;
 	left: 12px;
-	width: 200px;
+	width: 250px;
 }

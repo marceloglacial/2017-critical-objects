@@ -45,12 +45,17 @@ $('.count-box').each(function () {
     });
 });
 
-
+//  Animate logo - http://animejs.com
 anime({
   targets: ['path', 'poligon'],
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
-  duration: 2500,
+  duration: 2000,
   direction: 'alternate',
   loop: false
 });
+
+// Delay autoplay  - https://stackoverflow.com/questions/20876864/html5-video-autoplay-but-with-a-5-seconds-of-delay
+setTimeout(function(){
+    document.getElementById("hero-video").play();
+}, 2000);
