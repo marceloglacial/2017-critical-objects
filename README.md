@@ -7,5 +7,7 @@ Powered by:
 - Bootstrap 
 - jQuery 
 - Blocs
+- AnimeJS
+- AnimateCSS
 
 Live Preview: https://marceloglacial.github.io/critical-objects/dist/
