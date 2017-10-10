@@ -50,7 +50,7 @@ anime({
   targets: ['path', 'poligon'],
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
-  duration: 2500,
+  duration: 3500,
   direction: 'alternate',
   loop: false
 });
