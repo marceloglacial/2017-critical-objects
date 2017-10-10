@@ -59,3 +59,17 @@
 	transition-timing-function: ease;
 	transform-origin: 0% 50%;
 }
+
+.nav-brand-title {
+	background: #000;
+	position: relative;
+	text-indent: -9999px;
+	width: 210px;
+}
+
+.nav-brand-title svg {
+	position: absolute;
+	top: 0;
+	left: 12px;
+	width: 200px;
+}
