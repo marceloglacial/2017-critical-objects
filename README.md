@@ -1,13 +1,21 @@
-# Critical Objetcs's website. 
+# Critical Objetcs's Website
 
-Powered by: 
 
-- HTML5 
-- CSS3 
-- Bootstrap 
-- jQuery 
-- Blocs
-- AnimeJS
-- AnimateCSS
+## Front-end 
+* HTML5 
+* CSS3 
+* Bootstrap 
+* jQuery 
+* Blocs
+* AnimeJS
+* AnimateCSS
 
-Live Preview: https://marceloglacial.github.io/critical-objects/dist/
+
+## Live Demo
+
+https://glacial.gitlab.io/2017-critical-objects-website
+
+
+## Screnshot
+
+![screenshot](design/layout.png)
