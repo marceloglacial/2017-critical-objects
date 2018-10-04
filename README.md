@@ -1,5 +1,7 @@
 # Critical Objetcs's Website
 
+Website proposal to Critical Objects using Blocs as a required framework.
+
 
 ## Front-end 
 * HTML5 
