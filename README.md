@@ -18,4 +18,4 @@ https://glacial.gitlab.io/2017-critical-objects-website
 
 ## Screnshot
 
-![screenshot](design/layout.png)
+![screenshot](design/screenshot.jpg)
