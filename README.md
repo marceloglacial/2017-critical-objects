@@ -15,7 +15,7 @@ Website proposal to Critical Objects using Blocs as a required framework.
 
 ## Live Demo
 
-https://glacial.gitlab.io/2017-critical-objects-website
+https://marceloglacial.github.io/2017-critical-objects/front-end/dist/
 
 
 ## Screnshot
